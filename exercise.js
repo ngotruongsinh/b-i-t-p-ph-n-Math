@@ -9,11 +9,11 @@ function powerup(arr){
     });
 }
 
-/** 
+/**
  * Dùng hàm average tính điểm trung bình 3 môn của một học sinh.
  * Làm tròn điểm trung bình
  * Ví dụ: [8, 8, 6.75]  => 8
- * Gợi ý: Dùng Math.round 
+ * Gợi ý: Dùng Math.round
 */
 
 function average(arr) {
@@ -21,4 +21,16 @@ function average(arr) {
         return a + b;
     });
     return Math.round(result/arr.length);
+}
+
+/*
+  Viết hàm positiveNumber để chuyển các số âm trong một mảng thành các số dương.
+  Yêu cầu sử dụng Math Object
+*/
+
+function positiveNumber(arr) {
+  // your code here
+  return arr.map(function(a){
+      return Math.abs(a);
+  })
 }
