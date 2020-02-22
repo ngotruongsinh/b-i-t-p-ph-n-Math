@@ -52,3 +52,4 @@ function rightTriangle(a, b, c) {
     return check;
 
 }
+  Arr.push(c);
