@@ -52,4 +52,21 @@ function rightTriangle(a, b, c) {
     return check;
 
 }
+
+/**
+ * Viết hàm trigonim để tính 3 giá trị sin cos tan của một số nhập vào
+ * Example: trigonim(45) = [ '0.851', '0.525', '1.620' ]
+ * Gợi ý: Sử dụng toFixed() method
+*/
+
+function trigonim(number) {
+  // your code here
+  var Arr = [];
+  var a = Math.sin(number).toFixed(3);
+  Arr.push(a);
+  var b = Math.cos(number).toFixed(3);
+  Arr.push(b);
+  var c = Math.tan(number).toFixed(3);
   Arr.push(c);
+  return Arr;
+}
