@@ -34,3 +34,21 @@ function positiveNumber(arr) {
       return Math.abs(a);
   })
 }
+
+/**
+ * Viết hàm rightTriangle nhập vào 3 cạnh của một tam giác.
+ * Cho biết đó có phải là tam giác vuông hay không?
+*/
+
+function rightTriangle(a, b, c) {
+  // your code here
+  var check = true;
+  if(a === 0  , b === 0 , c === 0)
+    check = false;
+  else if (a === Math.sqrt(b * b + c * c) || b === Math.sqrt(a * a + c * c) || c === Math.sqrt(a * a + b * b))
+    check = true;
+  else
+    check = false;
+    return check;
+
+}
